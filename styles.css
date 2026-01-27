@@ -211,7 +211,7 @@ body {
 .hero-buttons {
     display: flex;
     gap: 0.75rem;
-    margin-top: 1.25rem;
+    margin-top: 1.75rem;
     margin-bottom: 1.25rem;
     flex-wrap: wrap;
     align-items: center;
@@ -429,9 +429,13 @@ section {
 
 .about-content {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1.15fr 0.85fr;
     gap: 4rem;
     align-items: start;
+}
+
+.about-text {
+    max-width: 44rem;
 }
 
 .about-text p {
@@ -446,6 +450,9 @@ section {
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     margin-top: 2rem;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .stat {
@@ -709,7 +716,7 @@ section {
     color: var(--primary-color);
 }
 
-.contact-linkedin {
+.contact-pill {
     display: inline-flex;
     align-items: center;
     gap: 0.6rem;
@@ -717,17 +724,32 @@ section {
     background: rgba(255, 255, 255, 0.75);
     border: 1px solid rgba(102, 126, 234, 0.25);
     backdrop-filter: blur(8px);
+    white-space: nowrap;
 }
 
-.contact-linkedin:hover {
+.contact-pill:hover {
     transform: translateY(-2px);
     box-shadow: var(--shadow-md);
     border-color: rgba(102, 126, 234, 0.6);
 }
 
-.contact-linkedin:focus-visible {
+.contact-pill:focus-visible {
     outline: none;
     box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.25);
+}
+
+.contact-social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.9rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.contact-social-icons .social-icon {
+    width: 22px;
+    height: 22px;
 }
 
 .contact-form {
@@ -925,7 +947,7 @@ section {
         gap: 0.75rem;
     }
 
-    .contact-linkedin {
+    .contact-pill {
         width: min(320px, 100%);
         justify-content: center;
     }
