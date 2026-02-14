@@ -609,6 +609,13 @@ section {
     color: var(--secondary-color);
 }
 
+.project-link-icon {
+    width: 1.1em;
+    height: 1.1em;
+    vertical-align: -0.15em;
+    display: inline-block;
+}
+
 /* Skills Section */
 .skills {
     background: var(--bg-light);
