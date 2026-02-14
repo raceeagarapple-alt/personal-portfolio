@@ -6,13 +6,13 @@
 }
 
 :root {
-    --primary-color: #667eea;
-    --secondary-color: #764ba2;
-    --accent-color: #f093fb;
-    --text-dark: #2d3748;
-    --text-light: #718096;
-    --bg-light: #f7fafc;
-    --bg-white: #ffffff;
+    --primary-color: #4A6BB5;
+    --secondary-color: #1a1a2e;
+    --accent-color: #D4A574;
+    --text-dark: #1a1a1a;
+    --text-light: #9A8F85;
+    --bg-light: #F5F0EB;
+    --bg-white: #FAFAF8;
     --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
     --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
     --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
@@ -43,7 +43,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(245, 240, 235, 0.95);
     backdrop-filter: blur(10px);
     z-index: 1000;
     transition: var(--transition);
@@ -141,7 +141,7 @@ body {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #4A6BB5 0%, #1a1a2e 100%);
     position: relative;
     overflow: hidden;
 }
@@ -182,7 +182,7 @@ body {
 }
 
 .highlight {
-    background: linear-gradient(135deg, #f093fb, #f5576c);
+    background: linear-gradient(135deg, #D4A574, #C48B5C);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -682,7 +682,7 @@ section {
     max-width: 760px;
     margin: 0 auto;
     padding: 1.75rem 1.5rem;
-    border: 1px solid rgba(102, 126, 234, 0.18);
+    border: 1px solid rgba(74, 107, 181, 0.18);
     border-radius: 16px;
     background: rgba(255, 255, 255, 0.6);
     backdrop-filter: blur(8px);
@@ -722,7 +722,7 @@ section {
     gap: 0.6rem;
     padding: 0.65rem 1.25rem;
     background: rgba(255, 255, 255, 0.75);
-    border: 1px solid rgba(102, 126, 234, 0.25);
+    border: 1px solid rgba(74, 107, 181, 0.25);
     backdrop-filter: blur(8px);
     white-space: nowrap;
 }
@@ -730,12 +730,12 @@ section {
 .contact-pill:hover {
     transform: translateY(-2px);
     box-shadow: var(--shadow-md);
-    border-color: rgba(102, 126, 234, 0.6);
+    border-color: rgba(74, 107, 181, 0.6);
 }
 
 .contact-pill:focus-visible {
     outline: none;
-    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.25);
+    box-shadow: 0 0 0 3px rgba(74, 107, 181, 0.25);
 }
 
 .contact-social-icons {
@@ -778,7 +778,7 @@ section {
 .form-group textarea:focus {
     outline: none;
     border-color: var(--primary-color);
-    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+    box-shadow: 0 0 0 3px rgba(74, 107, 181, 0.1);
 }
 
 .form-group textarea {
